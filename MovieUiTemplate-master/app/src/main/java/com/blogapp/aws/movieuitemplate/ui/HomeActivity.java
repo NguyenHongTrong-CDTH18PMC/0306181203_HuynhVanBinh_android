@@ -37,15 +37,13 @@ public class HomeActivity extends AppCompatActivity implements MovieItemClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
         iniView();
         iniSlider();
         iniPopularMovies();
         iniWeekMovies();
 
-
     }
-
+    
     private void iniWeekMovies() {
 
         MovieAdapter weekMovieAdapter= new MovieAdapter(this,DataSource.getWeekMovies(),this);
@@ -132,9 +130,6 @@ public class HomeActivity extends AppCompatActivity implements MovieItemClickLis
 
         }
     }
-
-
-
 
 
 }
